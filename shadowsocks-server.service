@@ -1,0 +1,11 @@
+[Unit]
+Description=Shadowsocks Server
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/ssserver -p 1221 -k addy8848 -m aes-256-cfb --user nobody
+User=nobody
+
+[Install]
+WantedBy=multi-user.target
