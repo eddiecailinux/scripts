@@ -1,0 +1,3 @@
+#!/bin/bash
+
+sudo sslocal -s serverip -p port -k passwd -t 600
